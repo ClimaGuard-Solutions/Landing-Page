@@ -1,17 +1,13 @@
-# Sistema operativo
-.DS_Store
-Thumbs.db
-
-# Archivos temporales de editores
+# Archivos temporales
 *.log
 *.tmp
+*.bak
 *.swp
 *.swo
-*.bak
 
 # VS Code
 .vscode/
 
-# Archivos de despliegue opcionales
-dist/
-build/
+# Sistema
+.DS_Store
+Thumbs.db
