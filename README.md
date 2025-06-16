@@ -37,6 +37,6 @@ Segmento organizado por adultos y adultos mayores entre 30 a 65 años, con una f
 - Mapas intearctivo con zonas de riesgo marcadas
 - Simulaciones y predicciones de escenarios
 - Planificación de rutas de evacuación
-- Gestión de planes de prevención personaliados
+- Gestión de planes de prevención personalizados
 - Chat en vivo para ciudadanos y autoridades
 - Foro de comunidad para interactuar
