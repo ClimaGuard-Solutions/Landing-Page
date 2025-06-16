@@ -1,3 +1,5 @@
 # ClimaGuard Solutions - LandingPage
 # Información del proyecto
-# ClimaGuard es...
+ClimaGuard es una startup que ofrece un sistema web y móvil prevención, planificación y reducción de riesgos de desastres naturales, específicamente de huaicos, deslizamientos e inundaciones, mediante la recopilación, consulta y análisis de datos, utilizando Big Data y análisis de patrones.
+A través de la integración de datos geoespaciales, climáticos e históricos, la plataforma identifica zonas vulnerables, predice posibles escenarios de riesgo y propone planes de acción personalizados para comunidades, gobiernos y organizaciones.
+Además, nuestra plataforma permite el monitoreo de amenazas, la elaboración de planes de emergencia, alertas tempranas y la participación ciudadana, así como también la consulta de información clave sobre desastres naturales, y brinda un canal de comunicación efectivo y confiable entre las autoridades que se encargan de estudiar estos desastres naturales (como el SENAMHI, por ejemplo) y los usuarios de ciertas comunidades que viven en comunidades en zonas de riesgo por huaicos.
