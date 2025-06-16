@@ -1,0 +1,13 @@
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
