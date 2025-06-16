@@ -1,0 +1,142 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #6ED8EE;
+    padding: 1px;
+    height: 80px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo-image{
+    height: auto;
+    width: 89px;
+    margin-left: 30px;
+    margin-right: 25px;
+    border-radius: 4%;
+}
+
+.brand-name{
+    color: white;
+    font-size: 1.30em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    color: white;
+    font-size: 1.3em;
+    margin: 0 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 549;
+}
+
+nav a:hover{
+    color:darkcyan;
+}
+
+#register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2F9F6;
+    height: 390px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.mobile-1{
+    height: 400px;
+    width: 300px;
+}
+
+.right-block{
+    margin-left: 50px;
+}
+
+.left-block{
+    width: 650px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+h1{
+    color: #F68C30;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p{
+    color: #7A7A7A;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+button{
+    border-radius: 5%;
+    font: 1em sans-serif;
+}
+
+.but1{
+    background-color: #5AD8CC;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 19px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.but1:hover{
+    background-color: white;
+    color: #5AD8CC;
+}
+
+.but2{
+    background-color: white;
+    color: #5AD8CC;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 19px;
+    border: 2px solid #5AD8CC;
+    transition: all 0.3s ease;
+}
+
+.but2:hover{
+    background-color: #5AD8CC;
+    color:white;
+}
+
+/*
+
+.left-header{
+    background-color: #6ED8EE;
+    text-align: left;
+    width: 1455px;
+}
+*/
