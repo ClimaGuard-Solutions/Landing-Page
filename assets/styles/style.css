@@ -44,9 +44,9 @@ html, body {
 
 .logo-image{
     height: auto;
-    width: 89px;
+    width: 120px;
     margin-left: 30px;
-    margin-right: 25px;
+    margin-right: 30px;
     border-radius: 4%;
 }
 
@@ -69,8 +69,8 @@ nav ul{
 
 nav ul li{
     color: white;
-    font-size: 1.3em;
-    margin: 0 20px;
+    font-size: 1.6em;
+    margin: 0 22px;
 }
 
 nav a{
@@ -791,4 +791,130 @@ justify-content: center;
     width:15.2%;
     right:8%;
     top: 4518px;
+}
+
+
+/* SOLO aplica el fondo cuando el body tenga la clase registro-bg */
+body.registro-bg {
+  background: linear-gradient(to bottom, #dff6f9, #a7e9f3);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centrado y estilo del contenedor principal */
+.Registrados {
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.Registrados h1 {
+  font-size: 2em;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+/* Párrafos */
+.Registrados p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+/* Botón ciudadano */
+.ciudadano,
+.autoridad {
+  background-color: #30c3e4;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.ciudadano:hover,
+.autoridad:hover {
+  background-color: #22aed3;
+}
+
+
+
+
+/* Solo aplica fondo si el <body> tiene esta clase */
+body.registro {
+  background: linear-gradient(to bottom, #dff6f9);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario */
+.ciudadano_registrado {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  color: #222;
+}
+
+/* Título principal */
+.ciudadano_registrado h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #2b2b2b;
+}
+
+/* Etiquetas */
+.ciudadano_registrado label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #029ecf;
+}
+
+/* Inputs de texto */
+.ciudadano_registrado input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de envío */
+.ciudadano_registrado button {
+  width: 100%;
+  padding: 15px;
+  background-color: #30c3e4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ciudadano_registrado button:hover {
+  background-color: #22aed3;
 }

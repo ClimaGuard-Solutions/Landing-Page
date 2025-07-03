@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ciudadano</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="registro">
+
+        <!-- Barra del menú -->
+    <header class="navbar">
+
+        <div class="logo-container">
+            <img src="images/Logo ClimaGuard.png" alt="Logo de ClimaGuard" class="logo-image">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#services">Servicios</a></li>
+                <li>|</li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li>|</li>
+                <li><a href="#contact">Contacto</a></li>
+                <li>|</li>
+                <li><a href="#Desktop">Descarga App</a></li>
+                <li>|</li>
+                <li><a href="#inicio">Inicia Sesión</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="ciudadano_registrado">
+
+    <h1>Registro</h1>
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" placeholder="Apellido completo" required>
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" placeholder="tucorreo@ejemplo.com" required>
+
+  <label for="direccion">Dirección (Dpt. / Ciudad / Distrito):</label>
+  <input type="text" id="direccion" placeholder="Lima, Lima, Chaclacayo" required>
+
+  <label for="telefono">Número de teléfono:</label>
+  <input type="text" id="telefono" value="+51 " required>
+
+  <label for="contrasena">Contraseña:</label>
+  <input type="password" id="contrasena" placeholder="************" required>
+
+  <label for="repetir">Repetir contraseña:</label>
+  <input type="password" id="repetir" placeholder="************" required>
+
+  <button type="button" onclick="validarFormulario()">Registrado</button>
+
+  <b></b>
+      <!-- Mensaje de éxito o error se mostrará aquí -->
+  <p id="mensaje" style="text-align: center; font-weight: bold;"></p>
+
+</section>
+
+<script>
+  const telefonoInput = document.getElementById('telefono');
+  telefonoInput.addEventListener('input', () => {
+    if (!telefonoInput.value.startsWith('+51 ')) {
+      telefonoInput.value = '+51 ';
+    }
+  });
+
+  function validarFormulario() {
+    const correo = document.getElementById('correo').value.trim();
+    const contrasena = document.getElementById('contrasena').value;
+    const repetir = document.getElementById('repetir').value;
+    const mensaje = document.getElementById('mensaje');
+
+    if (!correo.includes('@')) {
+      mensaje.textContent = '❌ El correo debe contener @';
+      mensaje.style.color = 'red';
+      return;
+    }
+
+    if (contrasena !== repetir) {
+      mensaje.textContent = '❌ Las contraseñas no coinciden';
+      mensaje.style.color = 'red';
+      return;
+    }
+
+    // Mostrar mensaje de éxito
+    mensaje.textContent = '✅ Registrado correctamente';
+    mensaje.style.color = 'green';
+
+    // Limpiar campos después de 1 segundo (puedes ajustar el tiempo si deseas)
+    setTimeout(() => {
+      document.getElementById('nombre').value = '';
+      document.getElementById('apellido').value = '';
+      document.getElementById('correo').value = '';
+      document.getElementById('direccion').value = '';
+      document.getElementById('telefono').value = '+51 ';
+      document.getElementById('contrasena').value = '';
+      document.getElementById('repetir').value = '';
+    }, 1000);
+  }
+</script>
+
+
+   
+</body>
+</html>
