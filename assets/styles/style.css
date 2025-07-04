@@ -793,55 +793,62 @@ justify-content: center;
     top: 4518px;
 }
 
-
-/* SOLO aplica el fondo cuando el body tenga la clase registro-bg */
-body.registro-bg {
-  background: linear-gradient(to bottom, #dff6f9, #a7e9f3);
+body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Centrado y estilo del contenedor principal */
+/* Fondo por clase */
+body.registro-bg {
+  background: linear-gradient(to bottom, #dff6f9, #a7e9f3);
+}
+
+body.registro {
+  background: linear-gradient(to bottom, #dff6f9);
+}
+
+/* Contenedor principal */
 .Registrados {
-  max-width: 500px;
-  margin: 80px auto;
+  max-width: 90%;
+  margin: 10vh auto;
   background-color: white;
-  padding: 40px;
-  border-radius: 20px;
+  padding: 5vw;
+  border-radius: 1.5rem;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Título */
 .Registrados h1 {
-  font-size: 2em;
+  font-size: 2rem;
   color: #2b2b2b;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 /* Párrafos */
 .Registrados p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #333;
-  margin: 20px 0 10px;
+  margin: 1.25rem 0 1rem;
 }
 
-/* Botón ciudadano */
+/* Botones */
 .ciudadano,
 .autoridad {
   background-color: #30c3e4;
   color: white;
   border: none;
-  padding: 15px 25px;
-  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
   max-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .ciudadano:hover,
@@ -849,72 +856,83 @@ body.registro-bg {
   background-color: #22aed3;
 }
 
-
-
-
-/* Solo aplica fondo si el <body> tiene esta clase */
-body.registro {
-  background: linear-gradient(to bottom, #dff6f9);
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Contenedor del formulario */
+/* Formulario */
 .ciudadano_registrado {
-  max-width: 500px;
-  margin: 50px auto;
+  max-width: 90%;
+  margin: 5vh auto;
   background-color: transparent;
-  padding: 30px;
-  border-radius: 15px;
+  padding: 4vw;
+  border-radius: 1rem;
   text-align: left;
   color: #222;
 }
 
-/* Título principal */
 .ciudadano_registrado h1 {
   text-align: center;
-  margin-bottom: 25px;
-  font-size: 2em;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
   color: #2b2b2b;
 }
 
-/* Etiquetas */
 .ciudadano_registrado label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: #029ecf;
 }
 
-/* Inputs de texto */
 .ciudadano_registrado input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
   border: none;
-  border-radius: 8px;
-  font-size: 1em;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   box-sizing: border-box;
   background-color: #fff;
   color: #333;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
 }
 
-/* Botón de envío */
 .ciudadano_registrado button {
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   background-color: #30c3e4;
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
-  font-size: 1em;
+  border-radius: 0.75rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ciudadano_registrado button:hover {
   background-color: #22aed3;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .Registrados,
+  .ciudadano_registrado {
+    padding: 6vw;
+    margin: 5vh 4vw;
+  }
+
+  .Registrados h1,
+  .ciudadano_registrado h1 {
+    font-size: 1.5rem;
+  }
+
+  .ciudadano_registrado input,
+  .ciudadano_registrado button,
+  .ciudadano,
+  .autoridad {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+
+  .Registrados p {
+    font-size: 1rem;
+  }
 }
