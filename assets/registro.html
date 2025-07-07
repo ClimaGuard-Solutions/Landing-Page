@@ -1,42 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - ClimaGuard</title>
+  <link rel="icon" href="Logo-ClimaGuard.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/styles/registro.css" />
+  <link rel="stylesheet" href="../assets/styles/style.css" />
 </head>
-<body class="registro">
+<body>
 
-        <!-- Barra del menú -->
-    <header class="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img src="../assets/images/Logo ClimaGuard.png" alt="Logo de ClimaGuard" class="logo-image" />
+      </a>
+    </div>
+    <button class="mobile-menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="../index.html#services">Servicios</a></li>
+        <li><a href="../index.html#about-us">Nosotros</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+        <li><a href="../index.html#download">Descarga App</a></li>
+        <li><a href="registro.html">Regístrate</a></li>
+        <li><a href="IniSesion.html">Inicia Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="logo-container">
-            <a onclick="window.location.href='../index.html'">
-                 <img src="images/Logo ClimaGuard.png" alt="Logo de ClimaGuard" class="logo-image">
-            </a>
-        </div>
+  <!-- SECCIÓN PRINCIPAL DE REGISTRO -->
+  <main class="registro-main">
+    <h1>Elige tu tipo de registro</h1>
+    <div class="registro-opciones">
+      <a href="ciudadano_registro.html" class="registro-card">Registrarse como Ciudadano</a>
+      <a href="autoridad_registro.html" class="registro-card">Registrarse como Autoridad</a>
+    </div>
+  </main>
 
-        <nav>
-            <ul>
-                <li><a onclick="window.location.href='../index.html#services'">Servicios</a></li>
-                <li><a onclick="window.location.href='../index.html#about-us'">Nosotros</a></li>
-                <li><a onclick="window.location.href='../index.html#contact'">Contacto</a></li>
-                <li><a onclick="window.location.href='../index.html#download'">Descarga App</a></li>
-                <li><a onclick="window.location.href='IniSesion.html'">Inicia Sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-
-   <section>
-    <div class="Registrados">
-    <h1>Regístrate</h1>
-    <p>Si eres ciudadano:</p>
-    <a href="ciudadano_registro.html"><button type="button" class="ciudadano">Presiona aquí para el registro de usuario común</button></a>
-    <p>Si eres una autoridad o experto:</p>           
-    <a href="autoridad_registro.html"><button type="button" class="autoridad">Presiona aquí para el registro de autoridad</button></a> 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../assets/images/Logo ClimaGuard.png" alt="Logo ClimaGuard" />
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="../index.html#home">Inicio</a></li>
+          <li><a href="../index.html#services">Servicios</a></li>
+          <li><a href="../index.html#about-us">Nosotros</a></li>
+          <li><a href="../index.html#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="../assets/images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="../assets/images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="../assets/images/twitter.png" alt="Twitter" /></a>
+      </div>
     </div>
 
-   </section>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ClimaGuard. Todos los derechos reservados.</p>
+      <div class="footer-apps">
+        <p>Descarga nuestra app:</p>
+        <a href="#"><img src="../assets/images/playstore.png" alt="Google Play"></a>
+        <a href="#"><img src="../assets/images/appstore.png" alt="App Store"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const nav = document.querySelector("nav");
+
+    mobileMenu.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>
+

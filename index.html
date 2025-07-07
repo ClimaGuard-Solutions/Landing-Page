@@ -1,177 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ClimaGuard</title>
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <link rel="icon" href="Logo-ClimaGuard.ico" type="image/x-icon">
-    </head>
-    <body class="home">
-        <!-- Barra del menú -->
-        <header class="navbar">
-            <div class="logo-container">
-                <a href="#">
-                    <img src="assets/images/Logo ClimaGuard.png" alt="Logo de ClimaGuard" class="logo-image">
-                </a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClimaGuard</title>
+  <link rel="icon" href="Logo-ClimaGuard.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+<body class="home">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-container">
+      <a href="#">
+        <img src="assets/images/Logo ClimaGuard.png" alt="Logo de ClimaGuard" class="logo-image" />
+      </a>
+    </div>
+    <button class="mobile-menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#about-us">Nosotros</a></li>
+        <li><a href="#contactate">Contacto</a></li>
+        <li><a href="#descarga">Descarga App</a></li>
+        <li><a href="assets/registro.html">Regístrate</a></li>
+        <li><a href="assets/IniSesion.html">Inicia Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero-section">
+      <div class="home-text">
+        <h1>Cuida tu vida e integridad con ClimaGuard</h1>
+        <p>Encuentra la forma ideal de prevenir desastres naturales, como los huaicos, junto con tu comunidad y autoridades.</p>
+        <a href="assets/registro.html" class="cta">Regístrate</a>
+        <a href="assets/IniSesion.html" class="cta" style="background-color:#66DCC7; margin-left:10px;">Inicia Sesión</a>
+      </div>
+      <div class="home-image">
+        <img src="assets/images/Imagen 1 Mobile.png" alt="Vista móvil de la app" />
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-block">
+            <img src="assets/images/foro_comunidad.png" alt="Foro comunitario" />
+            <h3 class="service-title">Foro Comunitario</h3>
+            <p class="service-text">Accede al foro e interactúa con quienes buscan las mismas soluciones que tú.</p>
+          </div>
+          <div class="service-block">
+            <img src="assets/images/informacion_confiable.png" alt="Información confiable" />
+            <h3 class="service-title">Información Confiable</h3>
+            <p class="service-text">Encuentra toda la información que necesitas saber para estar preparado ante los huaicos, como noticias, recomendaciones y herramientas clave publicadas por las autoridades.</p>
+          </div>
+          <div class="service-block">
+            <img src="assets/images/mapas_interactivos.png" alt="Mapas interactivos" />
+            <h3 class="service-title">Mapas Interactivos</h3>
+            <p class="service-text">Ingresa tu ubicación y visualiza mapas en tiempo real con zonas de riesgo marcadas.
+</p>
+          </div>
+        </div>
+
+        <!-- NUEVAS IMÁGENES ADICIONALES DE FEATURES -->
+        <div class="mobile-features">
+          <div class="feature-row reverse">
+            <div class="feature-text">
+              <h3>Gestiona planes de prevención personalizados</h3>
+              <p>Es importante que sepas qué hacer antes de que suceda un desastre natural. Con ClimaGuard podrás crear planes de prevención ajustados a tus necesidades y junto con tu comunidad. Además, podrás usar nuestro asistente de IA para que el plan de prevención concuerde perfectamente con tu situación.</p>
             </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#about-us">Nosotros</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="#download">Descarga App</a></li>
-                    <li><a onclick="window.location.href='assets/IniSesion.html'">Inicia Sesión</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Sección 1 -->
-        <section id="home">
-            <div class="left-block">
-
-                <div class="titulo_inicio">
-                    <h1 class = "tituloclima">Cuida tu vida e integridad con ClimaGuard</h1>
-                    <div class="separador_titulo"></div>
-                    <p class = "descripcion">Encuentra la forma ideal de prevenir desastres naturales, como los huaicos, junto con tu comunidad y autoridades.</p>
-                </div>
-                <div class = "botones_inicio">
-                    <button type="button" class="but1" onclick="window.location.href='assets/registro.html'">REGÍSTRATE</button>
-                    <button type="button" class="but2" onclick="window.location.href='assets/IniSesion.html'">INICIA SESIÓN</button></a>
-                </div>
-
-                <div class="image-block">
-                    <img src="assets/images/Imagen 1 Mobile.png" alt="Vista móvil de la app" class="mobile-1">
-                </div>
-
+            <div class="mobile-feature-img">
+              <img src="assets/images/mobile-2.png" alt="Notificaciones" />
             </div>
-        </section>
+          </div>
 
-        <!-- Sección 2 -->
-        <section id="services">
-            <div class="info">
-                <div class = "novedades">
-                    <div clas = "foro_comunidad">
-                        <img src="assets/images/informacion_confiable.png" class="img_foro_comunidad">
-                        <h2 class = "titulo_comunidad">Foro de comunidad</h2>
-                        <p class ="txtcomunidad">Accede al foro de la comunidad e interactúa con personas que buscan las mismas soluciones que tú.</p>
-                    </div>
-
-                    <div class = "info_confiable">
-                        <img src="assets/images/foro_comunidad.png" class = "img_informacion_confiable">
-                        <h2 class = "titulo_informacion">Información confiable</h2>
-                        <p class="txtinformacion">Encuentra toda la información  que necesitas saber para estar preparado ante los huaicos, como noticias, 
-                        recomendaciones y herramientas clave publicadas por las autoridades.</p>
-                    </div>
-                    
-                    <div class = "mapas_interactivos">
-                        <img src="assets/images/mapas_interactivos.png" class = "img_mapas_interactivos">
-                        <h2 class = "titulo_mapas">Mapas interactivos</h2>
-                        <p class="txtmapas">Ingresa tu ubicación y visualiza mapas en tiempo real con zonas de riesgo marcadas.</p>
-                    </div>                    
-                </div>
+          <div class="feature-row reverse">
+            <div class="feature-text">
+              <h3>Chatea en vivo con autoridades de tu localidad y expertos del clima</h3>
+              <p>Podrás contactarte con autoridades locales o gubernamentales, así como expertos en el clima y desastres naturales. Podrás resolver todas tus dudas con tan solo un clic, porque las autoridades y expertos estarán ahí para ti en cualquier momento que necesites ayuda.</p>
             </div>
-
-            <div class = "ayuda">
-                <h1 class = "ayuda_titulo">Te brindamos ayuda desde la empatía, porque sabemos lo que se siente vivir con miedo</h1>
+            <div class="mobile-feature-img">
+              <img src="assets/images/mobile-3.png" alt="Colaboración ciudadana" />
             </div>
-            
-            <div class = "planes_prevencion">
-                <h2 class = "titulo_planes">Gestiona planes de prevención personalizados</h2>
-                <p class = "txtplanes">Es importante que sepas qué hacer antes de que suceda un desastre natural. 
-                    Con ClimaGuard podrás crear planes de prevención ajustados a tus necesidades y 
-                    junto con tu comunidad. Además, podrás usar nuestro asistente de IA para que el 
-                    plan de prevención concuerde perfectamente con tu situación.</p>
-                <img src = "assets/images/mobile-2.png" class = "imgplanes">
+          </div>
+
+          <div class="feature-row reverse">
+            <div class="feature-text">
+              <h3>Recibe alertas cuando haya peligro por huaicos</h3>
+              <p>Podrás configurar las alertas que desees recibir a tu gusto, pero éstas siempre te llegarán con anticipación, así que no las ignores, porque podrían salvar tu vida y la de tu familia. Nuestras alertas te avisarán cuando se aproxime un huaico, deslizamiento o inundación, cerca de tu localidad.</p>
             </div>
-
-            <div class = "chat_autoridades">
-                <h2 class = "titulo_autoridades">Chatea en vivo con autoridades de tu localidad y expertos del clima</h2>
-                <p class = "txtautoridades">Podrás contactarte con autoridades locales o gubernamentales, 
-                    así como expertos en el clima y desastres naturales. Podrás resolver todas tus 
-                    dudas con tan solo un clic, porque las autoridades y expertos estarán ahí para ti en 
-                    cualquier momento que necesites ayuda.</p>
-                <img src = "assets/images/mobile-3.png" class = "imgautoridades">
+            <div class="mobile-feature-img">
+              <img src="assets/images/mobile-4.png" alt="Soporte accesible" />
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class = "recibe_alertas">
-                <h2 class = "titulo_alertas">Recibe alertas cuando haya peligro por huaicos</h2>
-                <p class = "txtalertas">Podrás configurar las alertas que desees recibir a tu gusto, 
-                    pero éstas siempre te llegarán con anticipación, así que no las ignores, porque 
-                    podrían salvar tu vida y la de tu familia. Nuestras alertas te avisarán cuando se 
-                    aproxime un huaico, deslizamiento o inundación, cerca de tu localidad.</p>
-                <img src = "assets/images/mobile-4.png" class = "imgalertas">
-            </div>
+    <!-- ABOUT US -->
+    <section id="about-us" class="about-section">
+      <div class="container">
+        <h2 class="titulo_nosotres">Nosotros</h2>
+        <div class="linea_separadora"></div>
+        <div class="mision_vision_quienes">
+          <div class="card">
+            <img src="assets/images/img-mision.png" alt="Misión" />
+            <h3>Misión</h3>
+            <p>Ayudar a comunidades vulnerables a estar a salvo durante los huaicos, inundaciones y deslizamientos.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/img-vision.png" alt="Visión" />
+            <h3>Visión</h3>
+            <p>Ser la plataforma líder de ayuda complementaria para desastres naturales, tanto de entidades del estado, como de comunidades que residan en zonas de riesgo por inundaciones.</p>
+          </div>
+          <div class="card">
+            <img src="assets/images/img-quienessomos.png" alt="Quiénes somos" />
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos una startup que te brinda una plataforma innovadora para que puedas actuar de forma correcta en caso de huaicos o deslizamientos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- CONTACTO -->
+  <section id="contactate" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-image">
+        <img src="assets/images/comunicate.png" alt="Contáctanos">
+      </div>
+      <div class="contact-form">
+        <h2>Contáctanos</h2>
+        <form id="form-contacto">
+          <input type="text" name="nombre" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu correo" required />
+          <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="mensaje-exito" style="display: none;">¡Gracias por contactarnos! Te responderemos pronto.</div>
+      </div>
+    </div>
+  </section>
 
-        <!--Sección 2-->
-        <section id = "about-us">
-            <div class="nosotres">
-                <h1 class ="titulo_nosotres">Nosotros</h1>
-                <div class = linea_separadora></div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/images/Logo ClimaGuard.png" alt="Logo ClimaGuard" />
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#about-us">Nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="assets/images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="assets/images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
 
-                <h2 class = "titulo_mision">Misión</h2>
-                <p class = "txtmision">Ayudar a comunidades vulnerables a estar a salvo 
-                    durante los huaicos, inundaciones y deslizamientos.</p>
-                <img src="assets/images/img-mision.png" class = "imgmision">
-                
-                <h2 class = "titulo_vision">Visión</h2>
-                <p class = "txtvision">Ser la plataforma líder de ayuda complementaria para desastres 
-                    naturales, tanto de entidades del estado, como de comunidades que residan en 
-                    zonas de riesgo por inundaciones.</p>
-                <img src="assets/images/img-vision.png" class = "imgvision">
-
-                <h2 class = "titulo_quienessomos">¿Quiénes somos?</h2>
-                <p class = "txtquienessomos">Somos una startup que te brinda una plataforma innovadora 
-                    para que puedas actuar de forma correcta en caso de huaicos o deslizamientos.</p>
-                <img src="assets/images/img-quienessomos.png" class = "img-quienessomos">
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="comunicate">
-                <img src="assets/images/comunicate.png" class = "img-comunica">
-                <h1 class = "comunicatecon">Comunícate con nosotros</h1>
-                <p class = "txtcomunica">Registra tu correo y nombre para ponernos en contacto contigo. 
-                    Resolveremos todas tus dudas, no tengas más miedo.</p>
-                <input class= "nombre" type="text" placeholder="Nombre Completo">
-                <input class= "correo"type="text" placeholder="Correo Electrónico">
-                <button type="button" class="contactar">Contactar</button>                
-                <div class = "linea_separadora2"></div>
-                <div class = "mensaje-confirmacion">GRACIAS! EN BREVE NOS CONTACTAREMOS CONTIGO!</div>
-            </div>
-
-            <div class="redes_sociales">
-                <h1 class="siguenos">¡Síguenos en nuestras redes sociales!</h1>
-                <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.png" class="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.png" class="instagram"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="assets/images/youtube.png" class="youtube"></a>
-                <a href="https://x.com/"><img src="assets/images/twitter.png" class="twitter"></a>
-                
-            </div>
-        </section>
-
-        <footer>
-            <section id = "download">
-                <div class = "descargalo">
-                    <p class = "estas_a_salvo">Con ClimaGuard estarás a salvo, tendrás todas 
-                        las herramientas que necesitas al alcance de un clic.</p>
-                    <p class = "derechos">© 2025 ClimaGuard. Todos los derechos reservados.</p>
-                    <h2 class = "descarga">Descarga gratis nuestra app</h2>
-                    <a href="https://play.google.com/store/games?hl=es" target="_blank">
-                        <img src = "assets/images/playstore.png" class = "playstore">
-                    </a>
-                    <a href="https://www.apple.com/la/app-store/" target="_blank">
-                        <img src = "assets/images/appstore.png" class = "appstore">         
-                    </a>
-                    
-                </div>
-            </section>
-        </footer>
-
-        <script src="assets/scripts/script.js"></script>
-
-    </body>
+    <div id = "descarga" class="footer-bottom">
+      <p>&copy; 2025 ClimaGuard. Todos los derechos reservados.</p>
+      <div class="footer-apps">
+        <p>Descarga nuestra app:</p>
+        <a href="#"><img src="assets/images/playstore.png" alt="Google Play"></a>
+        <a href="#"><img src="assets/images/appstore.png" alt="App Store"></a>
+      </div>
+    </div>
+  </footer>
+  </main>
+</body>
 </html>
