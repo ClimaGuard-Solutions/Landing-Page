@@ -1,0 +1,65 @@
+/* Extra styles - comunes o utilitarios */
+
+/* Tipografía por defecto */
+body {
+  font-family: 'Source Sans Pro', 'Source Sans 3', 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Botones reutilizables */
+button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Estilos de input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 12px 18px;
+  border: 2px solid #5AD8CC;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Mensajes de validación */
+#mensaje {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Botón "atrás" reutilizable */
+.back-button {
+  display: inline-block;
+  background-color: #F68C30;
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e7791e;
+}

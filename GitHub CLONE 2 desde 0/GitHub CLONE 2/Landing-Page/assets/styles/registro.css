@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* ======== ESTILOS REGISTRO ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #EEFFFE;
+  padding-top: 80px;
+}
+
+.registro-main {
+  padding: 80px 8%;
+  text-align: center;
+  background-color: #EEFFFE;
+  min-height: 100vh;
+}
+
+.registro-main h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.registro-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.registro-card {
+  background-color: #F68C30;
+  color: white;
+  padding: 30px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.registro-card:hover {
+  background-color: #e7791e;
+  transform: translateY(-4px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .registro-opciones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .registro-card {
+    width: 100%;
+    padding: 24px;
+  }
+}

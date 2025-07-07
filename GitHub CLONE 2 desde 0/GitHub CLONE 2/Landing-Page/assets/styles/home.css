@@ -1,0 +1,82 @@
+/* Sección Home - Hero principal */
+#home {
+  margin-top: 80px; /* igual a la altura del navbar */
+  padding: 80px 8%;
+  background-color: #EEFFFE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+/* Contenedor de texto principal */
+.home-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.home-text h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #F68C30;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #606060;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Botón destacado */
+.home-text .cta {
+  background-color: #F68C30;
+  color: white;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.home-text .cta:hover {
+  background-color: #e7791e;
+}
+
+/* Imagen del lado derecho */
+.home-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6%;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-image {
+    margin-top: 30px;
+  }
+}
